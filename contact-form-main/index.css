@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --mobile-size:375px;
+    --desktop-size:1440px;
+    --primary-green-lighter:hsl(148, 38%, 91%);
+    --primary-green-darker:hsl(169, 82%, 27%);
+    --primary-red:hsl(0, 66%, 54%);
+    --neutral-white:hsl(0, 0%, 100%);
+    --neutral-grey-medium:hsl(186, 15%, 59%);
+    --neutral-grey-darker:hsl(187, 24%, 22%);
+}
+
+*{
+    font-size: 16px;
+    font-family: "Karla", sans-serif;
+    color: var(--neutral-grey-medium);
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--primary-green-lighter);
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--neutral-white);
+    height:80%;
+    width: 50%;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+input{
+    padding: 0.5rem;
+    border: 1px solid var(--neutral-grey-medium);
+    border-radius: 4px;
+    /* width: 100%; */
+    margin: 0;
+    height: auto;
+}
+
+label{
+    margin-bottom: 0.5rem;
+}
+
+textarea{
+    resize: none;
+    height: 7em;
+}
+
+button{
+    background-color: var(--primary-green-darker);
+    color: var(--neutral-white);
+    text-align: center;
+    width: 100%;
+    border: none;
+    padding: 0.7rem;
+    border-radius: 6px;
+}
+
+.name,.email,.query,.message,.first,.second{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:0.5rem 0;
+}
+
+.name{
+    display: flex;
+    flex-direction: row;
+}
+
+.first{
+    margin: 0 1rem 0 0;
+}
+
+.first,.second{
+    flex-grow: 1;
+}
+
+.query div{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.query-group-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.query-item{
+    padding: 0.5rem;
+    border: 1px solid var(--neutral-grey-medium);
+    border-radius: 4px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.query-item:first-child{
+    margin-right: 1rem;
+}
+.query input{
+    margin:0.5rem;
+}
+
+.consent{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    margin:1.5rem 0 2rem 0;
+}
+.consent input{
+    margin-right: 1rem;
+}

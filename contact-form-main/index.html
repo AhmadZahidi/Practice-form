@@ -7,41 +7,62 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
 
   <title>Frontend Mentor | Contact form</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
   <form>
     <h1>Contact Us</h1>
 
-    <label>First Name *</label>
-    <input type="text">This field is required</input>
+    <div class="name">
+      <div class="first">
+        <label>First Name *</label>
+        <input type="text"></input>
+        <!-- <p>This field is required</p> -->
+      </div>
 
-    <label>Last Name *</label>
-    <input type="text">This field is required</input>
-
-    <label>Email Address *</label>
-    <input type="text">Please enter a valid email address
-    This field is required</input>
-
-    <label>Query Type</label>
-    <input type="radio" name="query">General Enquiry</input>
-    <input type="radio" name="query">Support Request</input>
+      <div class="second">
+        <label>Last Name *</label>
+        <input type="text"></input>
+        <!-- <p>This field is required</p> -->
+      </div>
+    </div>
 
 
+    <div class="email">
+      <label>Email Address *</label>
+      <input type="text"></input>
+      <!-- <p>Please enter a valid email address This field is required</p> -->
+    </div>
+
+    <div class="query">
+      <label>Query Type</label>
+      <div class="query-group-item">
+        <div class="query-item">
+          <input type="radio" name="query">General Enquiry</input>
+        </div>
+        <div class="query-item">
+          <input type="radio" name="query">Support Request</input>
+        </div>
+      </div>
+
+      <!-- <p>Please select a query type</p> -->
+    </div>
+
+    <div class="message">
+      <label>Message</label>
+      <textarea></textarea>
+      <!-- <p>This field is required</p> -->
+    </div>
+
+    <div class="consent">
+      <input type="checkbox">I consent to being contacted by the team</input>
+      <!-- <p>To submit this form, please consent to being contacted</p> -->
+    </div>
+
+    <button>Submit</button>
   </form>
 
 
@@ -51,23 +72,23 @@
 
 
 
-  Please select a query type
 
-  Message
-  This field is required
 
-  I consent to being contacted by the team
-  To submit this form, please consent to being contacted
 
-  Submit
+
+
+
+
+
+  <!-- Submit
 
   Message Sent!
   Thanks for completing the form. We'll be in touch soon!
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#">zahidi</a>.
+  </div> -->
 </body>
 
 </html>
