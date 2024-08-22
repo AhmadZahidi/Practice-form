@@ -67,6 +67,10 @@ button{
     border-radius: 6px;
 }
 
+p{
+    display: none;
+}
+
 .name,.email,.query,.message,.first,.second{
     display: flex;
     flex-direction: column;

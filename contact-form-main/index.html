@@ -9,60 +9,62 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="index.css">
 
+ 
+
   <title>Frontend Mentor | Contact form</title>
 </head>
 
 <body>
-  <form>
+  <form id="form">
     <h1>Contact Us</h1>
 
     <div class="name">
       <div class="first">
         <label>First Name *</label>
-        <input type="text"></input>
-        <!-- <p>This field is required</p> -->
+        <input id="first" type="text" required></input>
+        <p>This field is required</p>
       </div>
 
       <div class="second">
         <label>Last Name *</label>
-        <input type="text"></input>
-        <!-- <p>This field is required</p> -->
+        <input id="second" type="text" required></input>
+        <p>This field is required</p>
       </div>
     </div>
 
 
     <div class="email">
       <label>Email Address *</label>
-      <input type="text"></input>
-      <!-- <p>Please enter a valid email address This field is required</p> -->
+      <input id="email" type="text" required></input>
+      <p>Please enter a valid email address This field is required</p>
     </div>
 
     <div class="query">
       <label>Query Type</label>
       <div class="query-group-item">
         <div class="query-item">
-          <input type="radio" name="query">General Enquiry</input>
+          <input type="radio" name="query" id="general-query">General Enquiry</input>
         </div>
         <div class="query-item">
-          <input type="radio" name="query">Support Request</input>
+          <input type="radio" name="query" id="support-request">Support Request</input>
         </div>
       </div>
 
-      <!-- <p>Please select a query type</p> -->
+      <p>Please select a query type</p>
     </div>
 
     <div class="message">
       <label>Message</label>
-      <textarea></textarea>
-      <!-- <p>This field is required</p> -->
+      <textarea id="message" required></textarea>
+      <p>This field is required</p>
     </div>
 
     <div class="consent">
-      <input type="checkbox">I consent to being contacted by the team</input>
-      <!-- <p>To submit this form, please consent to being contacted</p> -->
+      <input id="consent" type="checkbox">I consent to being contacted by the team</input>
+      <p>To submit this form, please consent to being contacted</p>
     </div>
 
-    <button>Submit</button>
+    <button type="submit">Submit</button>
   </form>
 
 
@@ -89,6 +91,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
     Coded by <a href="#">zahidi</a>.
   </div> -->
+  <script src="index.js"></script>
 </body>
 
 </html>
