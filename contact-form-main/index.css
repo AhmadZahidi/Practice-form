@@ -33,8 +33,8 @@ form{
     flex-direction: column;
     justify-content: space-evenly;
     background-color: var(--neutral-white);
-    height:80%;
-    width: 50%;
+    height:fit-content;
+    width: fit-content;
     padding: 2rem;
     border-radius: 1rem;
 }
@@ -68,7 +68,7 @@ button{
 }
 
 p{
-    display: none;
+    display:none;
 }
 
 .name,.email,.query,.message,.first,.second{
