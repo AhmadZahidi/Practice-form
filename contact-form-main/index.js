@@ -69,4 +69,24 @@ function formValidation(){
     }
 }
 
+// This will execute when a radio button is clicked
+document.querySelectorAll('input[name="query"]').forEach(function(radio) {
+    radio.addEventListener('change', function() {
+        // Get the parent .query-item of the selected radio button
+        const parentItem = radio.closest('.query-item');
+
+        // Reset background color for all .query-item elements
+        document.querySelectorAll('.query-item').forEach(function(item) {
+            item.style.backgroundColor = '';
+        });
+
+        // Set background color to green for the selected item
+        if (parentItem) {
+            parentItem.style.backgroundColor = "var(--primary-green-lighter)";
+            parentItem.style.borderColor="hsl(169, 82%, 27%)";
+        }
+    });
+});
+
+
 // doing error-state
