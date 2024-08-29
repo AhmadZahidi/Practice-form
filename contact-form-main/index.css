@@ -48,6 +48,10 @@ input{
     height: auto;
 }
 
+input:hover{
+    border-color: var(--primary-green-darker);
+}
+
 label{
     margin-bottom: 0.5rem;
 }
@@ -128,4 +132,8 @@ p{
 }
 .consent input{
     margin-right: 1rem;
+}
+
+input:checked{
+    accent-color: var(--primary-green-darker);
 }
