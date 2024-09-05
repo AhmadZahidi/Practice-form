@@ -1,11 +1,12 @@
 var firstName=document.getElementById("first");
 var secondName=document.getElementById("second");
 var email=document.getElementById("email");
-var query=document.querySelector('input[name="query"]:checked');
+var query=document.querySelector('input[name="query"]');
 var message=document.getElementById("message");
 var consent=document.getElementById("consent");
 var form=document.getElementById("form");
 var button=document.querySelector("button")
+var popUp=document.querySelector(".sucess-state");
 
 //targeting p element for each class
 var firstP=document.querySelector(".first p");
@@ -20,7 +21,7 @@ var error_color="hsl(0, 66%, 54%)";
 button.addEventListener("click",formValidation);
 
 function formValidation(){
-   
+   event.preventDefault();
     if(firstName.value.length <= 0 && secondName.value.length<=0){
         firstName.style.border="1px solid hsl(0, 66%, 54%)";
         firstP.style.display="block";
@@ -53,10 +54,13 @@ function formValidation(){
         event.preventDefault();
     }
 
-    if(!query){
+    if(!query.checked){
+        console.log(query.checked);
         queryP.style.display="block";
         queryP.style.color=error_color;
     }
+
+    //problem with query, checked value does not registered
     
     if(message.value.length<=0){
         messageP.style.display="block";
@@ -67,6 +71,9 @@ function formValidation(){
         consentP.style.display="block";
         consentP.style.color=error_color;
     }
+
+    popUp.style.opacity="1";
+
 }
 
 // This will execute when a radio button is clicked

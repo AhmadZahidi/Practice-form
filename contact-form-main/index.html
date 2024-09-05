@@ -9,63 +9,75 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="index.css">
 
- 
+
 
   <title>Frontend Mentor | Contact form</title>
 </head>
 
 <body>
-  <form id="form">
-    <h1>Contact Us</h1>
-
-    <div class="name">
-      <div class="first">
-        <label>First Name *</label>
-        <input id="first" type="text" required></input>
-        <p>This field is required</p>
-      </div>
-
-      <div class="second">
-        <label>Last Name *</label>
-        <input id="second" type="text" required></input>
-        <p>This field is required</p>
-      </div>
+  <div class="success-state">
+    <div class="success-state-header">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" fill="none" viewBox="0 0 20 21">
+        <path fill="#fff"
+          d="M14.28 7.72a.748.748 0 0 1 0 1.06l-5.25 5.25a.748.748 0 0 1-1.06 0l-2.25-2.25a.75.75 0 1 1 1.06-1.06l1.72 1.72 4.72-4.72a.75.75 0 0 1 1.06 0Zm5.47 2.78A9.75 9.75 0 1 1 10 .75a9.76 9.76 0 0 1 9.75 9.75Zm-1.5 0A8.25 8.25 0 1 0 10 18.75a8.26 8.26 0 0 0 8.25-8.25Z" />
+      </svg>
+      <h1>Message Sent!</h1>
     </div>
+    <p>Thanks for completing the form. We'll be in touch soon!</p>
+  </div>
+  <div class="container">
+    <form id="form">
+      <h1>Contact Us</h1>
 
-
-    <div class="email">
-      <label>Email Address *</label>
-      <input id="email" type="text" required></input>
-      <p>Please enter a valid email address This field is required</p>
-    </div>
-
-    <div class="query">
-      <label>Query Type</label>
-      <div class="query-group-item">
-        <div class="query-item">
-          <input type="radio" name="query" id="general-query">General Enquiry</input>
+      <div class="name">
+        <div class="first">
+          <label>First Name *</label>
+          <input id="first" type="text" required></input>
+          <p>This field is required</p>
         </div>
-        <div class="query-item">
-          <input type="radio" name="query" id="support-request">Support Request</input>
+
+        <div class="second">
+          <label>Last Name *</label>
+          <input id="second" type="text" required></input>
+          <p>This field is required</p>
         </div>
       </div>
 
-      <p>Please select a query type</p>
-    </div>
 
-    <div class="message">
-      <label>Message</label>
-      <textarea id="message" required></textarea>
-      <p>This field is required</p>
-    </div>
+      <div class="email">
+        <label>Email Address *</label>
+        <input id="email" type="text" required></input>
+        <p>Please enter a valid email address This field is required</p>
+      </div>
 
-    <div class="consent">
-      <input id="consent" type="checkbox">I consent to being contacted by the team</input>
-      <p>To submit this form, please consent to being contacted</p>
-    </div>
+      <div class="query">
+        <label>Query Type</label>
+        <div class="query-group-item">
+          <div class="query-item">
+            <input type="radio" name="query" id="general-query">General Enquiry</input>
+          </div>
+          <div class="query-item">
+            <input type="radio" name="query" id="support-request">Support Request</input>
+          </div>
+        </div>
 
-    <button type="submit">Submit</button>
-  </form>
+        <p>Please select a query type</p>
+      </div>
+
+      <div class="message">
+        <label>Message</label>
+        <textarea id="message" required></textarea>
+        <p>This field is required</p>
+      </div>
+
+      <div class="consent">
+        <input id="consent" type="checkbox">I consent to being contacted by the team</input>
+        <p>To submit this form, please consent to being contacted</p>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
 
 
 

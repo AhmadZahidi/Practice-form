@@ -18,7 +18,12 @@
     box-sizing: border-box;
 }
 
+
 body{
+    margin: 0;
+}
+
+.container{
     background-color: var(--primary-green-lighter);
     margin: 0;
     height: 100vh;
@@ -136,4 +141,34 @@ p{
 
 input:checked{
     accent-color: var(--primary-green-darker);
+}
+
+.success-state{
+    position:fixed;
+    z-index:200;
+    background-color: var(--neutral-grey-darker);
+    padding:1rem;
+    border-radius: 8px;
+    left: 50%;
+    top:0.5rem;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.success-state p{
+    display: block;
+    color: var(--neutral-white);
+}
+
+.success-state-header{
+    display: flex;
+    align-items: center;
+}
+
+.success-state h1{
+    display: inline;
+    text-align: center;
+    color: var(--neutral-white);
+    top:20%;
+    margin-left: 0.75rem;
 }
