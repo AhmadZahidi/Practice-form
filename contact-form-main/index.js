@@ -1,7 +1,7 @@
 var firstName=document.getElementById("first");
 var secondName=document.getElementById("second");
 var email=document.getElementById("email");
-var query=document.querySelector('input[name="query"]');
+var query=document.querySelectorAll('input[name="query"]');
 var message=document.getElementById("message");
 var consent=document.getElementById("consent");
 var form=document.getElementById("form");
@@ -14,7 +14,7 @@ var secondP=document.querySelector(".second p");
 var emailP=document.querySelector(".email p");
 var queryP=document.querySelector(".query p");
 var messageP=document.querySelector(".message p");
-var consentP=document.querySelector(".consent P");
+var consentP=document.querySelector(".consent p");
 
 var error_color="hsl(0, 66%, 54%)";
 
@@ -54,13 +54,10 @@ function formValidation(){
         event.preventDefault();
     }
 
-    if(!query.checked){
-        console.log(query.checked);
+    if(!query[0].checked && !query[1].checked){
         queryP.style.display="block";
         queryP.style.color=error_color;
     }
-
-    //problem with query, checked value does not registered
     
     if(message.value.length<=0){
         messageP.style.display="block";
@@ -94,6 +91,3 @@ document.querySelectorAll('input[name="query"]').forEach(function(radio) {
         }
     });
 });
-
-
-// doing error-state

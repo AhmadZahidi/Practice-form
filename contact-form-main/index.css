@@ -11,16 +11,12 @@
     --neutral-grey-darker:hsl(187, 24%, 22%);
 }
 
-*{
+body{
+    margin: 0;
     font-size: 16px;
     font-family: "Karla", sans-serif;
     color: var(--neutral-grey-medium);
     box-sizing: border-box;
-}
-
-
-body{
-    margin: 0;
 }
 
 .container{
@@ -130,8 +126,6 @@ p{
 }
 
 .consent{
-    display: flex;
-    flex-direction: row;
     align-items: center; 
     margin:1.5rem 0 2rem 0;
 }
